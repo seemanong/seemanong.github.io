@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seema's Photos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <header class="main-header">
+        
+    <div>
+        <h5 class ="company-name company-name-large">SEEMA'S PHOTOS</h5>
+    </div>
+    </header>
+</head>
+<body>
+	<section>
+		<div>
+			<h2 class="reveal"> Content Reveal</h2>
+			<h2 class="reveal">Scroll </h2>
+			<h5 class="reveal"> With Cultural Dress</h5>
+			<img src="images/s1.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> With Style</h2>
+			<h2 class="reveal">Cultural dress </h2>
+			<img src="images/s2.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Dance </h2>
+			<h2 class="reveal">But cool dance </h2>
+			<img src="images/s3.jpg">
+		</div>
+	</section>
+	
+	<section>
+		<div>
+			<h2 class="reveal"> Modelling</h2>
+			<h2 class="reveal">When new bala comes... </h2>
+			<img src="images/s10.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Simple...</h2>
+			<h2 class="reveal">Make up Right ? </h2>
+			<img src="images/s5.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Being</h2>
+			<h2 class="reveal">A cool girl... </h2>
+			<img src="images/s6.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Is it...</h2>
+			<h2 class="reveal">Nice ? </h2>
+			<img src="images/s7.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> NOW</h2>
+			<h2 class="reveal">I start caring about... </h2>
+			<img src="images/s8.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Just chill!</h2>
+			<h2 class="reveal">GOOD! POSE!</h2>
+			<img src="images/s9.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Bala?</h2>
+			<h2 class="reveal">Just look! </h2>
+			<img src="images/s11.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> I know</h2>
+			<h2 class="reveal">I am good at pose . Oh!! </h2>
+			<img src="images/s12.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Simple</h2>
+			<h2 class="reveal">attire </h2>
+			<img src="images/s13.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> I know</h2>
+			<h2 class="reveal">My lips are red. </h2>
+			<img src="images/s14.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Cute</h2>
+			<h2 class="reveal">Challenge</h2>
+			<img src="images/s15.jpg">
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="reveal"> Next Uprising.</h2>
+			<h2 class="reveal">Model </h2>
+			<img src="images/s16.jpg">
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+	<script type="text/javascript">
+		const reveal = gsap.utils.toArray('.reveal');
+		reveal.forEach((text,i)=>{
+			ScrollTrigger.create({
+				trigger:text,
+				toggleClass:'active',
+				start:"top 90%",
+				end:"top 20%",
+				// markers:true
+			})
+		})
+		const images = gsap.utils.toArray('img');
+		images.forEach((img,i)=>{
+			ScrollTrigger.create({
+				trigger:img,
+				toggleClass:'active',
+				start:"top 90%",
+				end:"top 20%",
+				// markers:true
+			})
+		})
+	</script>
+</body>
+</html>
